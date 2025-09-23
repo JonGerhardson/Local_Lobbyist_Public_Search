@@ -35,7 +35,7 @@ git clone [https://github.com/JonGerhardson/Local_Lobbyist_Public_Search/](https
 
 # Step-by-Step Guide
 
-**❗❗❗** If you just want to build the .db you can skip this step and download a copy of my html files HERE \[TK ADD ZIP LINK HERE\] for disclosure reports from the first 6 months of 2025.
+**❗❗❗** If you just want to get the data you can download the output of this process for the reportign period of January 1 to June 30, 2025 from /2025_example in this repo. 
 
 ## Step 0: Extract Disclosure Report URLs from the MA Lobbyist Website
 
