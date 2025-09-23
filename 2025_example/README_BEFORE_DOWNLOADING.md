@@ -1,0 +1,1 @@
+This database was created using the steps and code described in the top level of this directory. It may contain errors, innacuracies, be out of date, or have other issues that would make it an unreliable source of information. By acessing it you agree not to hold me liable for any use or misuse of its content. 
