@@ -17,7 +17,7 @@ The process is broken down into four main steps, executed by separate Python scr
 
 Python 3
 
-A valid LegiScan API key. You can get a free API key with 30,000 requests per month from Legiscan here https://legiscan.com/legiscan
+A valid LegiScan API key (free) 
 
 Required Python libraries. Install with pip if you don't already have them installed. Pip is a package installer for python. If you need to install pip follow the instructions at https://pypi.org/project/pip/
 
@@ -172,12 +172,12 @@ python csvsql.py
 
 This final step uses the `get_bills.py` script to add legislative status and other details to the `lobbying_activities` table in your new database.
 
-**Setup**: Open `get_bills.py` and replace `'YOUR_API_KEY'` with your actual LegiScan API key.
+**Setup**: Open `get_bills.py` and replace `'YOUR_API_KEY'` with your actual LegiScan API key. You can get a free API key with 30,000 requests per month from Legiscan here https://legiscan.com/legiscan 
 
 **Usage**: The script requires a legislative year as an argument.
 
 **Fetch Missing Data Only (Standard Mode)**:
-This mode is ideal for the initial data enrichment. It only fetches data for bills that haven't been processed before.
+If you're adding Legiscan data for the first time this will get the Legiscan ID and bill status for every bill in your dataset. If you add new data, or if something got borked and there's null values in any of the legiscape data, it will only only fetch data for bills that haven't been processed before to avoid using up all your API credits. 
 
 ```
 python get_bills.py 2025
@@ -185,7 +185,7 @@ python get_bills.py 2025
 ```
 
 **Update All Bill Data**:
-Use the `--update_all` flag to refresh the status for every bill for a given year. This is useful for keeping the data current.
+Use the `--update_all` flag to refresh the status for every bill for a given year. This is useful for keeping the current year's data up to date with the outcomes of bills. Probably not useful in most cases for data from past years. 
 
 ```
 python get_bills.py 2025 --update_all
