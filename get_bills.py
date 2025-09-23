@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 # --- Configuration ---
 # IMPORTANT: Replace with your actual LegiScan API key
-API_KEY = 'cf830ce8067e061fcdbdccab45967789' 
+API_KEY = 'YOUR_API_KEY_HERE' 
 BASE_URL = 'https://api.legiscan.com/'
 STATE = 'MA'
 DB_FILE = "lobbying_data.db"
