@@ -192,6 +192,20 @@ python get_bills.py 2025 --update_all
 
 ```
 
+## Add list of elected officials
+This step is optional but makes some analysis easier by letting you quickly display the party, district, etc. of an elected official who appears in the data. 
+Run this command on your database file:
+```
+CREATE TABLE elected_officials (
+    full_name TEXT,
+    title TEXT,
+    district TEXT,
+    party TEXT,
+    body TEXT
+);
+```
+Then run the inser_officials.sql script in this repo to populate the table. 
+
 # Data Dictionary
 
 This section describes the tables and columns in the `lobbying_data.db` SQLite database.
