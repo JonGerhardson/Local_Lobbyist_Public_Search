@@ -1,3 +1,5 @@
+/* 194th Massachusetts General Court 2025-2026 last updated Sept. 23 2025 */
+
 INSERT INTO elected_officials (full_name, title, district, party, body) VALUES ('Michael Barrett', 'Senator', 'Third Middlesex', 'Democrat', 'Senate');
 INSERT INTO elected_officials (full_name, title, district, party, body) VALUES ('Michael Brady', 'Senator', 'Second Plymouth and Norfolk', 'Democrat', 'Senate');
 INSERT INTO elected_officials (full_name, title, district, party, body) VALUES ('William Brownsberger', 'Senator', 'Suffolk and Middlesex', 'Democrat', 'Senate');
