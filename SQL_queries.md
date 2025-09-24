@@ -229,7 +229,7 @@ Requires `elected_officials` table for accurate matching (via `LIKE '%' || full_
 
 ### Expenses with Elected Officials (Per-Official Cost, Top 25)
 **SQL**:
-Note: per-official cost only counts people appearing in the elected_officials table, not all attendees for the reported expense. Should be used for ballparking things at most,. 
+Note: per-official cost only counts people appearing in the elected_officials table, not all attendees for the reported expense. (For example a $13,000 party thrown by the Firefighters Association and attended by six politicians and 325 firefighters will divide $13,000 by six, not 331 to find the per-offical cost of the expense.) Should be used for ballpark/napkin stuff only. 
 ```sql
 WITH expense_official_counts AS (
   SELECT me.met_expense_id, COUNT(eo.full_name) AS official_count
